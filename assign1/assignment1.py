@@ -13,7 +13,7 @@ def stringCount(list):
 
 #Part 2 of assignment
 def isFloat(value):
-    if re.match(r"^\d*[.]\d+$", value):
+    if re.match(r"^[+]?[-]?\d*[.]\d+$", value):
         return True
     else:
         return False
@@ -92,10 +92,14 @@ class Node:
 
 #alist = ["Hello", "Hello", "Bob"]
 #stringCount(alist)
-#numFloat = isFloat("2.30")
-#print(numFloat)
-#numFloat = isFloat("2")
-#print(numFloat)
+numFloat = isFloat("2.30")
+print(numFloat)
+numFloat = isFloat("+2")
+print(numFloat)
+numFloat = isFloat("-2.09898")
+print(numFloat)
+numFloat = isFloat("+452.09456898")
+print(numFloat)
 
 ll = LinkedList()
 ll.insert(1)
