@@ -89,32 +89,3 @@ class Node:
 
     def set_next(self, new_next):
         self.next_node = new_next
-
-#alist = ["Hello", "Hello", "Bob"]
-#stringCount(alist)
-numFloat = isFloat("2.30")
-print(numFloat)
-numFloat = isFloat("+2")
-print(numFloat)
-numFloat = isFloat("-2.09898")
-print(numFloat)
-numFloat = isFloat("+452.09456898")
-print(numFloat)
-
-ll = LinkedList()
-ll.insert(1)
-ll.insert(2)
-ll.printLL()
-ll.delete(2)
-ll.printLL()
-if ll.search(2):
-	print("Value 2 found")
-else:
-	print("Value 2 not found")
-if ll.search(1):
-	print("Value 1 found")
-else:
-	print("Value 1 not found")
-ll.insert(4)
-ll.printLL()
-print(str(ll.size()))
